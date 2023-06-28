@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --cor1: rgb(1, 3, 19);
+    --cor2: rgb(161, 159, 21);
+    --cor3: rgb(194, 193, 132);
+    --fontes: #fff;
+}
+
+body {
+    min-width: 690px;
+    height: 100%;
+    background-color: var(--cor1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--fontes);
+}
+
+header{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.menu {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+#logo img {
+    width: 350px;
+    height: 100%;
+    margin-bottom: -50px;
+    padding: 10px;
+}
+
+nav{
+    text-align: right;
+    width: 80%;
+    margin: auto;
+}
+
+nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--fontes);
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+nav li :hover{
+    background-image: linear-gradient(to bottom right, var(--cor3), var(--cor2));
+    color: black
+}
+
+
+.list{
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    display: table!important;
+    width: 100%;
+}
+
+.information{
+    padding-top: 10px;
+    padding-left: 15%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.infos{
+    color: grey;
+    line-height: 1.4em;
+    font-size: 20px;
+    padding-top: 8px;
+    display: block;
+}
+
+.title a{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 50px;
+    float: left;
+    color: #1c439b;
+}
+
+.btnfavoritos{
+    padding-top: 100px;
+    padding-right: 400px;
+    float: right;
+}
+
+.btnfavoritos button{
+    border: 0;
+    border-radius: 10%;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor2);
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    margin-top: 1rem;
+    position: static;
+    background-color: rgba(0, 0, 0, 0.39);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .ratings-def{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+footer .footer-contato{
+    display: block;
+    margin: 10px auto 10px;
+    padding: 5px;
+    position: relative;
+    width: 650px;
+}
+
+footer .footer-contato::before{
+    color: #fff;
+    content: 'entre em contato';
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.icon-footer-sns{
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #fff;
+    border: 0;
+    border-radius: 100%;
+}
+footer img:hover{
+    scale: 1.1;
+    transition: 250ms ease-in-out;
+}
+
+footer .footer-link-block{
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 720px 1px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+footer .footer-link-home{
+    border-right: #9caed9 1px solid;
+    margin-right: 18px;
+    padding-right: 20px;
+    display: inline-block!important;
+}
+
+footer .footer-link-login{
+    display: inline-block!important;
+}
+
+.footer-link-home a{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.footer-link-login a{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 18px;
+}

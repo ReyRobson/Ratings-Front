@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings</title>
+    <link rel="stylesheet" href="css/styles-index.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="assets/logo ratings.png" alt="Logo Ratings"></a>
+        </div>
+        <div id="menu" class="menu">
+            <nav>
+                <ul class="buttons">
+                    <li><a href="topRatings.html">Melhores Avaliados</a></li>
+                    <li><a href="discusions.html">Discussoes</a></li>
+                    <li><a href="login.html">Fazer Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section style="text-align: center;">
+            <h1>Discuta, avalie, mostre sua opiniao sobre as obras que tanto gosta!</h1>
+            <h1>realize uma pesquisa para começar</h1>
+        </section>
+        <div class="container">
+            <form action="/search" method="GET" class="caixa-pesquisa">
+                <input  id="searchbar" type="text" placeholder="search" name="q">
+                <button id="btnsearchbar" type="submit" value="Enviar"><img style="width: 30px;" src="assets/procurar.png" alt="lupa de pesquisa"></button>
+                <!-- <script>
+                    let input = document.getElementById("searchbar")
+
+                    input.addEventListener("keyup", (event) => {
+                        if(event.keyCode === 13){
+                            //event.preventDefault()
+                            document.getElementById("btnsearchbar").click()
+                        }
+                    })
+                </script> -->
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-block" style="width: 1330px;">
+            <div class="ratings-def">
+                <h2>O que é o Ratings?</h2>
+                <p>O Ratings é um lugar onde o publico pode avaliar, verificar seu progresso e discutir sobre as principais obras dos diversos generos de midia</p>
+            </div>
+            <div class="footer-contato">
+                <a target="_blank" class="icon-footer-sns" title="mande mesagem pelo whatsapp">
+                    <img src="assets/whatsapp.png" alt="icone zap zap">
+                </a>
+                <a target="_blank" class="icon-footer-sns" title="siga no instagram" href="instagram.com">
+                    <img src="assets/instagram.png" alt="icone instagram">
+                </a>
+            </div>
+            <div class="footer-link-block">
+                <p class="footer-link-home">
+                    <a href="index.html">Home</a>
+                </p>
+                <p class="footer-link-home">
+                    <a target="_blank">FAQ</a>
+                    <a target="_blank">Terms</a>
+                    <a target="_blank">Support</a>
+                </p>
+                <p class="footer-link-login">
+                    <a href="" id="mailogin">Login</a>
+                    <a href="">Cadastro</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
