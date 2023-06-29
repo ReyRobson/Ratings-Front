@@ -21,7 +21,7 @@ app.get('/search', async (req,res) => {
     let value = req.query.q
     let retorno = await makeGet(value)
 
-    geraPagina(retorno.data, value)
+    geraPagina(retorno, value)
 
     res.redirect('/pesquisa')
 })
@@ -56,13 +56,7 @@ function geraPagina(retorno, value){
             <section style="text-align: center; font-size: 20px;">
                 <h1>Exibindo resultados para ${value}</h1>
             </section>
-            <article>`;
-            var persons =[
-                {firstname : "Malcom", lastname: "Reynolds"},
-                {firstname : "Kaylee", lastname: "Frye"},
-                {firstname : "Jayne", lastname: "Cobb"}
-            ]
-        
+            <article>`;        
             retorno.forEach(retorno => {
                 htmlContent += `<div class="list">
                 <div class="information">
@@ -124,21 +118,6 @@ function geraPagina(retorno, value){
         }
         console.log('arquivo salvo')
     })
-}
-
-function createList(){
-    var persons =[
-        {firstname : "Malcom", lastname: "Reynolds"},
-        {firstname : "Kaylee", lastname: "Frye"},
-        {firstname : "Jayne", lastname: "Cobb"}
-    ]
-
-    var result = ""
-    persons.forEach(item => [
-        result += "<li>" + item.firstname + "</li>"
-    ])
-
-    return result
 }
 
 app.listen(8080, () => {
